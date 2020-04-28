@@ -8,40 +8,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-//ype MessagerConf struct {
-//	ExamName     string
-//	FunctionName string
-//	TaskName     string
-//}
-//
-//// what we send in every message
-//type MessageInfo struct {
-//	MessageConf
-//	Message string
-//	Time    time.Duration
-//}
-//
-//// the main struct created by New
-//type Messager struct {
-//	MessagerConf
-//	Chan    chan MessageInfo
-//	Timeout time.Duration
-//}
-//
-//func New(info MessageInfo, infoChan chan MessageInfo, timeout time.Duration) *Messager {
-//	return &Messager{
-//		Conf:    info,
-//		Chan:    infoChan,
-//		Timeout: timeout,
-//	}
-//}
-//
-//// You had _one_ job!
-//func (m *Messager) Send(msg string) error {
-//	var msgInfo MessageInfo
-//
-//
-
 func TestInstantiate(t *testing.T) {
 
 	mc := MessagerConf{
